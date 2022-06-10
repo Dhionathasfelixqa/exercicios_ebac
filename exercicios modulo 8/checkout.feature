@@ -13,36 +13,15 @@ Contexto:
 Dado que entro na tela de checkout
 
 Cenário: Cadastro finalizado com sucesso 
-Quando Insiro <Nome>
-E o <sobrenome>
-E o <Pais>
-E o <Endereco>
-E a <cidade>
-E o <cep>
-E o <telefone>
-E o <Email>
+Quando Insiro <Nome>, <sobrenome>, <Pais>, <Endereco>, <cidade>, <cep>, <telefone>, <Email>
 Então deve concluir meu cadastro e finalizar a compra 
 
 Cenário: Cadastro com campos vazios
-Quando não Insiro <Nome>
-E o <sobrenome>
-E o <Pais>
-E o <Endereco>
-E a <cidade>
-E o <cep>
-E o <telefone>
-E o <Email>
+Quando não Insiro <Nome>, <sobrenome>, <Pais>, <Endereco>, <cidade>, <cep>, <telefone>, <Email>
 Então deve apresentar mensagem de alerta "Por favor preencha os campos obrigatorios"
 
 Cenário: Cadastro com email invalido
-Quando Insiro <Nome>
-E o <sobrenome>
-E o <Pais>
-E o <Endereco>
-E a <cidade>
-E o <cep>
-E o <telefone>
-E o <Email>
+Quando Insiro <Nome>, <sobrenome>, <Pais>, <Endereco>, <cidade>, <cep>, <telefone>, <Email>
 Então deve apresentar mensagem de alerta "Email invalido"
 
 
